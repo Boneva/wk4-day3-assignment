@@ -1,0 +1,149 @@
+/* Nesting */
+/* SCSS */
+nav {
+  font-size: 1em;
+  font-font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav ul .nav-left,
+nav ul .nav-right {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+nav ul .nav-left li,
+nav ul .nav-right li {
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+}
+nav ul .nav-left li a,
+nav ul .nav-right li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+nav ul .nav-left li a:hover,
+nav ul .nav-right li a:hover {
+  text-decoration: underline;
+}
+
+/* Variables */
+html {
+  font-size: 1em;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(218, 170, 14);
+}
+
+header {
+  height: 50px;
+  width: 1350px;
+  margin: 0.8em auto 1em auto;
+}
+
+main {
+  background: rgb(255, 255, 255);
+  width: 1350px;
+  min-height: 535px;
+  padding: 1.5%;
+  margin: 0 auto;
+}
+main #intro-image {
+  float: left;
+  width: 800px;
+}
+main #intro-image img {
+  width: 800px;
+}
+main #intro-text {
+  width: 550px;
+  height: 407px;
+  float: left;
+  background: rgb(212, 213, 216);
+  text-align: center;
+  padding-top: 8em;
+}
+main #intro-text h3 {
+  font-size: 2em;
+  color: rgb(49, 49, 48);
+}
+main #intro-text span {
+  font-family: "Sacramento", cursive;
+  font-size: 2em;
+}
+main #registration-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+}
+main #registration-form form {
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+main #registration-form form h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+main #registration-form form label {
+  font-size: 1em;
+  text-align: left;
+}
+main #registration-form form input[type=text],
+main #registration-form form input[type=email] {
+  padding: 0.75em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+main #registration-form form button {
+  color: rgb(255, 255, 255);
+  background: rgb(218, 170, 14);
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+main #registration-form form button:hover {
+  background: rgb(241.3017241379, 194.3362068966, 41.6982758621);
+}
+
+footer {
+  width: 1350px;
+  margin: 2em auto;
+  padding-left: 80px;
+  font-size: 0.85em;
+}
+
+.submit-button {
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 40px;
+  background: rgb(218, 170, 14);
+  margin-top: 2em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid rgb(49, 49, 48);
+}
+
+/*# sourceMappingURL=styles.css.map */

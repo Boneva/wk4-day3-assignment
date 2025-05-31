@@ -1,0 +1,40 @@
+/* Nesting */
+/* SCSS */
+nav {
+  font-size: 1em;
+  font-font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav ul .nav-left,
+nav ul .nav-right {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+nav ul .nav-left li,
+nav ul .nav-right li {
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+}
+nav ul .nav-left li a,
+nav ul .nav-right li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+nav ul .nav-left li a:hover,
+nav ul .nav-right li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=nav.css.map */

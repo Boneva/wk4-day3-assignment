@@ -1,0 +1,46 @@
+/* Nesting */
+
+@use 'colors';
+/* SCSS */
+nav {
+  font: {
+    size: 1em;
+    font-weight: bold;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      color: colors.$color4;
+    }
+
+    .nav-left li,
+    .nav-right li {
+      margin: 0 10px;
+      color: colors.$color4;
+
+      a {
+        text-decoration: none;
+        color: colors.$color4;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
