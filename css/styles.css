@@ -32,11 +32,6 @@ nav ul .nav-right li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-nav ul .nav-left li a:hover,
-nav ul .nav-right li a:hover {
-  text-decoration: underline;
-}
-
 /* Variables */
 html {
   font-size: 1em;
@@ -86,8 +81,6 @@ main #intro-text span {
 }
 main #registration-form {
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding: 3em 0;
 }
 main #registration-form form {
@@ -95,9 +88,6 @@ main #registration-form form {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
 }
 main #registration-form form h2 {
   font-size: 2em;

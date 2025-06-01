@@ -2,7 +2,7 @@
 /* SCSS */
 nav {
   font-size: 1em;
-  font-font-weight: bold;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,9 +32,4 @@ nav ul .nav-right li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-nav ul .nav-left li a:hover,
-nav ul .nav-right li a:hover {
-  text-decoration: underline;
-}
-
 /*# sourceMappingURL=nav.css.map */
