@@ -2,7 +2,7 @@
 /* SCSS */
 nav {
   font-size: 1em;
-  font-font-weight: bold;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
