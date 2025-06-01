@@ -1,11 +1,35 @@
+@use 'variables' as *;
 
+// Background classes
+.bg-primary {
+  background-color: $backgroundColor1;
+}
 
-$backgroundColor1: rgb(218, 170, 14);
-$backgroundColor2: rgb(127, 236, 55);
-$mainColor: rgb(255, 255, 255);
-$sectionColor: rgb(212, 213, 216);
+.bg-secondary {
+  background-color: $backgroundColor2;
+}
 
-$color1: rgb(170, 240, 113);
-$color2: rgb(58, 107, 212);
-$color3: rgb(49, 49, 48);
-$color4: rgb(255, 255, 255);
+.bg-main {
+  background-color: $mainColor;
+}
+
+.bg-section {
+  background-color: $sectionColor;
+}
+
+// Text colors
+.text-color1 {
+  color: $color1;
+}
+
+.text-color2 {
+  color: $color2;
+}
+
+.text-color3 {
+  color: $color3;
+}
+
+.text-color4 {
+  color: $color4;
+}

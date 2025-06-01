@@ -1,0 +1,24 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+
+  th, td {
+    padding: 0.75em;
+    text-align: left;
+    border-bottom: 1px solid color.adjust( $sectionColor, $lightness: -10%);
+  background-color: color.adjust($mainColor, $lightness: -5%);
+  }
+
+  th {
+    background-color: $sectionColor;
+    color: $color3;
+  }
+  
+  tr:hover {
+    background-color: color.adjust($mainColor, $lightness: -5%);
+  }
+}

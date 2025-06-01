@@ -1,7 +1,5 @@
-/* Nesting */
-
+@use 'variables' as *;
 @use 'colors';
-/* SCSS */
 nav {
   font: {
     size: 1em;
@@ -25,18 +23,17 @@ nav {
     .nav-right {
       display: flex;
       align-items: center;
-      color: colors.$color4;
+      color: $color4;
     }
 
     .nav-left li,
     .nav-right li {
       margin: 0 10px;
-      color: colors.$color4;
+      color: $color4;
 
       a {
         text-decoration: none;
-        color: colors.$color4;
-
+        color: $color4;
       }
     }
   }

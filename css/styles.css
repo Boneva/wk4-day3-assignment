@@ -1,5 +1,35 @@
-/* Nesting */
-/* SCSS */
+.bg-primary {
+  background-color: rgb(218, 170, 14);
+}
+
+.bg-secondary {
+  background-color: rgb(127, 236, 55);
+}
+
+.bg-main {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg-section {
+  background-color: rgb(212, 213, 216);
+}
+
+.text-color1 {
+  color: rgb(170, 240, 113);
+}
+
+.text-color2 {
+  color: rgb(58, 107, 212);
+}
+
+.text-color3 {
+  color: rgb(49, 49, 48);
+}
+
+.text-color4 {
+  color: rgb(255, 255, 255);
+}
+
 nav {
   font-size: 1em;
   font-weight: bold;
@@ -32,14 +62,74 @@ nav ul .nav-right li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-/* Variables */
+
+#registration-form {
+  width: 100%;
+  padding: 3em 0;
+}
+#registration-form form {
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+#registration-form form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+#registration-form form label {
+  font-size: 1em;
+  text-align: left;
+}
+#registration-form form input[type=text],
+#registration-form form input[type=email] {
+  padding: 0.75em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#registration-form form button {
+  color: rgb(255, 255, 255);
+  background: rgb(218, 170, 14);
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+#registration-form form button:hover {
+  background: rgb(241.3017241379, 194.3362068966, 41.6982758621);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+}
+table th, table td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid rgb(185.256097561, 186.8780487805, 191.743902439);
+  background-color: rgb(242.25, 242.25, 242.25);
+}
+table th {
+  background-color: rgb(212, 213, 216);
+  color: rgb(49, 49, 48);
+}
+table tr:hover {
+  background-color: rgb(242.25, 242.25, 242.25);
+}
+
 html {
   font-size: 1em;
   width: 100%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   background: rgb(218, 170, 14);
 }
 
@@ -55,13 +145,14 @@ main {
   min-height: 535px;
   padding: 1.5%;
   margin: 0 auto;
+  overflow: hidden;
 }
 main #intro-image {
   float: left;
   width: 800px;
 }
 main #intro-image img {
-  width: 800px;
+  width: 100%;
 }
 main #intro-text {
   width: 550px;
@@ -72,56 +163,19 @@ main #intro-text {
   padding-top: 8em;
 }
 main #intro-text h3 {
-  font-size: 2em;
+  font-size: 2.5rem;
   color: rgb(49, 49, 48);
 }
 main #intro-text span {
   font-family: "Sacramento", cursive;
   font-size: 2em;
 }
-main #registration-form {
-  width: 100%;
-  padding: 3em 0;
-}
-main #registration-form form {
-  padding: 2em 3em;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
-main #registration-form form h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-main #registration-form form label {
-  font-size: 1em;
-  text-align: left;
-}
-main #registration-form form input[type=text],
-main #registration-form form input[type=email] {
-  padding: 0.75em;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-main #registration-form form button {
-  color: rgb(255, 255, 255);
-  background: rgb(218, 170, 14);
-  height: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
-main #registration-form form button:hover {
-  background: rgb(241.3017241379, 194.3362068966, 41.6982758621);
-}
 
 footer {
   width: 1350px;
   margin: 2em auto;
   padding-left: 80px;
-  font-size: 0.85em;
+  font-size: 0.8rem;
 }
 
 .submit-button {
@@ -134,6 +188,16 @@ footer {
   cursor: pointer;
   font-weight: bold;
   border: 1px solid rgb(49, 49, 48);
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

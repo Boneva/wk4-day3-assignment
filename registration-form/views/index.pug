@@ -1,15 +1,24 @@
 extends layout
 
 block content
+  if showForm
+    section#registration-form
+      h2 Register to subscribe
+      if errors
+        each error in errors
+          p.error= error.msg
+      form(action="/" method="POST")
+        label(for="name") Name:
+        input(type="text" id="name" name="name" value=data ? data.name : '')
+        label(for="email") Email:
+        input(type="email" id="email" name="email" value=data ? data.email : '')
+        button.submit-button(type="submit") Register
+  else
+    section#intro-text
+      span Simple Kitchen
+      h3 Simple & Comforting Recipes All Year Round
+      p Pan-seared chicken, Grill shrimp, mac & cheese—need we say more?
+      a.button(href="/register") View Recipes
 
-    if registrations.length
-        table.listing-table.table-dark.table-striped
-            tr
-                th Name
-                th Email
-            each registration in registrations
-                tr
-                    td= registration.name
-                    td= registration.email
-    else
-        p No registrations yet :(
+    section#intro-image
+      img(src="/images/louisiana-barbecued-shrimp.webp" alt="Louisiana Barbecued Shrimp")

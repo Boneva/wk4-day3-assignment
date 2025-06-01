@@ -1,55 +1,53 @@
-@use 'sass:color';
+@use 'variables' as *;
 @use 'colors';
 @use 'nav';
 @use 'registration';
 @use 'listingtable';
-@use 'variables';
-
-
 
 html {
-  font-size: 1em; // 0.8em + 0.2 would error due to unit mismatch
+  font-size: 1em;
   width: calc(100% / 2 + 50%);
 }
 
 body {
   font-family: $fontFamily1;
-  background: colors.$backgroundColor1;
+  background: $backgroundColor1;
 }
 
 header {
-  height: 50px;
-  width: 1350px;
+  height: $headerHeight;
+  width: $mainWidth;
   margin: 0.8em auto 1em auto;
 }
 
 main {
-  background: colors.$mainColor;
-  width: 1350px;
+  background: $mainColor;
+  width: $mainWidth;
   min-height: 535px;
   padding: 1.5%;
   margin: 0 auto;
+  overflow: hidden; // Clear floats
 
   #intro-image {
     float: left;
-    width: 800px;
+    width: $introImageWidth;
 
     img {
-      width: 800px;
+      width: 100%;
     }
   }
 
   #intro-text {
-    width: 550px;
-    height: 407px;
+    width: $introTextWidth;
+    height: $introTextHeight;
     float: left;
-    background: colors.$sectionColor;
+    background: $sectionColor;
     text-align: center;
     padding-top: 8em;
 
     h3 {
       font-size: $fontSizeH3;
-      color: colors.$color3;
+      color: $color3;
     }
 
     span {
@@ -58,29 +56,38 @@ main {
     }
   }
 }
-  
+
 footer {
-  width: 1350px;
+  width: $mainWidth;
   margin: 2em auto;
   padding-left: 80px;
   font-size: $fontSizeSmall;
 }
 
-// @extend (Note: @extend is discouraged in large projects, consider mixins)
-// Create a mixin
+// Button Mixin
 @mixin button-style {
-  color: colors.$color4;
+  color: $color4;
   width: 100px;
   height: 40px;
-  background: colors.$backgroundColor1;
+  background: $backgroundColor1;
   margin-top: 2em;
   border-radius: 4px;
   cursor: pointer;
-  weight: bold;
+  font-weight: bold;
 }
 
-// Apply it
 .submit-button {
   @include button-style;
-  border: 1px solid colors.$color3;
+  border: 1px solid $color3;
+}
+
+// Utility classes
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
 }
