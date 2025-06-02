@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  main
+    .main-sections
+      section#intro-text
+        span Simple Kitchen
+        h4 Simple &amp; Comforting <br> Recipes All Year Round
+
+      section#registration-form
+        form(action="/registration" method="POST")
+          h2 Register to subscribe
+
+          div
+            label(for="name") Name:
+            br
+            input(type="text" id="name" name="name" required)
+          
+          div
+            label(for="email") Email:
+            br
+            input(type="email" id="email" name="email" required)
+          
+          button(type="submit") Register
+          

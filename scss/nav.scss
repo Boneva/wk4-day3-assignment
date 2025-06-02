@@ -3,7 +3,8 @@
 nav {
   font: {
     size: 1em;
-    font-weight: bold;
+    weight: bold;
+    color: $color4
   }
 
   display: flex;
