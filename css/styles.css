@@ -85,12 +85,15 @@ nav ul .nav-right li a {
   text-align: left;
 }
 #registration-form form input[type=text],
-#registration-form form input[type=email] {
+#registration-form form input[type=username],
+#registration-form form input[type=email],
+#registration-form form input[type=password] {
   padding: 0.75em;
   font-size: 1em;
   border: 1px solid #000000;
   border-radius: 4px;
   width: 80%;
+  align-items: center;
 }
 #registration-form form button {
   color: rgb(255, 255, 255);
