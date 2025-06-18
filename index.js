@@ -10,12 +10,13 @@ const basic = auth.basic({
   file: path.join(__dirname, '../users.htpasswd'),
 });
 
-router.get('/', (req, res) => {
-  //res.send('It works!');
-  res.render('form', { title: 'Registration form' });
+router.get('/register', (req, res) => {
+  res.send('It works!');
+  console.log("hello")
+  res.render('register', { title: 'Registration form' });
 });
 
-router.get('/registrations', basic.check((req, res) => {
+router.get('/registration', basic.check((req, res) => {
   Registration.find()
     .then((registrations) => {
       res.render('index', { title: 'Listing registrations', registrations });
@@ -25,7 +26,7 @@ router.get('/registrations', basic.check((req, res) => {
     });
 }));
 
-router.post('/', 
+router.post('/register', 
  [
         check('name')
         .isLength({ min: 1 })
